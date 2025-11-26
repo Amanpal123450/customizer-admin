@@ -71,7 +71,7 @@ export default function TaxPage() {
   useEffect(() => {
     async function GetAllvariation() {
       const res = await fetch(
-        "https://e-com-customizer.onrender.com/api/v1/totalTax",
+        "https://ruwa-backend.onrender.com/api/v1/totalTax",
         {
           method: "GET",
           headers: {
@@ -94,7 +94,7 @@ export default function TaxPage() {
    
     try {
       const res = await fetch(
-        "https://e-com-customizer.onrender.com/api/v1/addTax",
+        "https://ruwa-backend.onrender.com/api/v1/addTax",
         {
           method: "POST",
           headers: {
@@ -113,7 +113,7 @@ export default function TaxPage() {
     console.log("sdcs");
     try {
       const res = await fetch(
-        `https://e-com-customizer.onrender.com/api/v1/tax/${editId}`,
+        `https://ruwa-backend.onrender.com/api/v1/tax/${editId}`,
         {
           method: "PUT",
           headers: {
@@ -188,7 +188,7 @@ export default function TaxPage() {
   const handleDelete = async (id) => {
   if (confirm("Are you sure you want to delete this Tax?")) {
     try {
-      const res = await fetch(`https://e-com-customizer.onrender.com/api/v1/tax/${id}`, {
+      const res = await fetch(`https://ruwa-backend.onrender.com/api/v1/tax/${id}`, {
         method: "DELETE",
       });
  const data = await res.json();
@@ -211,7 +211,7 @@ export default function TaxPage() {
 
 const toggleStatus = async (id) => {
   try {
-    const response = await fetch(`https://e-com-customizer.onrender.com/api/v1/TaxToggle/${id}`,{
+    const response = await fetch(`https://ruwa-backend.onrender.com/api/v1/TaxToggle/${id}`,{
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

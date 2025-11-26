@@ -59,7 +59,7 @@ export default function CategoriesPage1() {
       try {
         setLoading(true);
         const res = await fetch(
-          "https://e-com-customizer.onrender.com/api/v1/showAllCategory",
+          "https://ruwa-backend.onrender.com/api/v1/showAllCategory",
         );
 
         if (!res.ok) {
@@ -103,7 +103,7 @@ export default function CategoriesPage1() {
     if (confirm("Are you sure you want to delete this category?")) {
       try {
         const res = await fetch(
-          `https://e-com-customizer.onrender.com/api/v1/deleteCategory/${id}`,
+          `https://ruwa-backend.onrender.com/api/v1/deleteCategory/${id}`,
           {
             method: "DELETE",
             headers: {

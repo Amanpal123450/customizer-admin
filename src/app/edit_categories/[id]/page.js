@@ -83,7 +83,7 @@ export default function EditSubCategory() {
 
     try {
       const res = await fetch(
-        `https://e-com-customizer.onrender.com/api/v1/updateCategory/${id}`,
+        `https://ruwa-backend.onrender.com/api/v1/updateCategory/${id}`,
         {
           method: "PUT",
           headers: {

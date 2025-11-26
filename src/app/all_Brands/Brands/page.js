@@ -80,7 +80,7 @@ export default function BrandsPage() {
   formData.append("thumbnail", form.thumbnail); // binary file
 
   try {
-    const res = await fetch("https://e-com-customizer.onrender.com/api/v1/createBrand", {
+    const res = await fetch("https://ruwa-backend.onrender.com/api/v1/createBrand", {
       method: "POST",
       body: formData,
     });
@@ -108,7 +108,7 @@ export default function BrandsPage() {
   formData.append("thumbnail", form.thumbnail);
     try {
       const res = await fetch(
-        `https://e-com-customizer.onrender.com/api/v1/brand/${editId}`,
+        `https://ruwa-backend.onrender.com/api/v1/brand/${editId}`,
         {
           method: "PUT",
 
@@ -135,7 +135,7 @@ export default function BrandsPage() {
   useEffect(() => {
     async function GetAllvariation() {
       const res = await fetch(
-        "https://e-com-customizer.onrender.com/api/v1/totalBrands",
+        "https://ruwa-backend.onrender.com/api/v1/totalBrands",
         {
           method: "GET",
           headers: {
@@ -216,7 +216,7 @@ export default function BrandsPage() {
   if (!confirm("Are you sure you want to delete this brand?")) return;
 
   try {
-    const res = await fetch(`https://e-com-customizer.onrender.com/api/v1/brand/${id}`, {
+    const res = await fetch(`https://ruwa-backend.onrender.com/api/v1/brand/${id}`, {
       method: 'DELETE',
     });
 
@@ -236,7 +236,7 @@ export default function BrandsPage() {
 
 const toggleStatus = async (id) => {
   try {
-    const res = await fetch(`https://e-com-customizer.onrender.com/api/v1/brand/toggle/${id}`, {
+    const res = await fetch(`https://ruwa-backend.onrender.com/api/v1/brand/toggle/${id}`, {
       method: "PUT",
     });
 

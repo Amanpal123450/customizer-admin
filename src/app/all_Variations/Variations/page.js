@@ -69,7 +69,7 @@ export default function VariationPage() {
   useEffect(() => {
     async function GetAllvariation() {
       const res = await fetch(
-        "https://e-com-customizer.onrender.com/api/v1/totalVariation",
+        "https://ruwa-backend.onrender.com/api/v1/totalVariation",
         {
           method: "GET",
           headers: {
@@ -93,7 +93,7 @@ export default function VariationPage() {
     // setLoading(true);
     try {
       const res = await fetch(
-        "https://e-com-customizer.onrender.com/api/v1/addVariation",
+        "http://localhost:4000/api/v1/addVariation",
         {
           method: "POST",
           headers: {
@@ -122,7 +122,7 @@ export default function VariationPage() {
     console.log("sdcs");
     try {
       const res = await fetch(
-        `https://e-com-customizer.onrender.com/api/v1/variation/${editId}`,
+        `https://ruwa-backend.onrender.com/api/v1/variation/${editId}`,
         {
           method: "PUT",
           headers: {
@@ -206,7 +206,7 @@ export default function VariationPage() {
   const handleDelete = async (id) => {
   if (confirm("Are you sure you want to delete this unit?")) {
     try {
-      const res = await fetch(`https://e-com-customizer.onrender.com/api/v1/variation/${id}`, {
+      const res = await fetch(`https://ruwa-backend.onrender.com/api/v1/variation/${id}`, {
         method: "DELETE",
       });
  const data = await res.json();
@@ -229,7 +229,7 @@ export default function VariationPage() {
 
 const toggleStatus = async (id) => {
   try {
-    const response = await fetch(`https://e-com-customizer.onrender.com/api/v1/variationToggle/${id}`,{
+    const response = await fetch(`https://ruwa-backend.onrender.com/api/v1/variationToggle/${id}`,{
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

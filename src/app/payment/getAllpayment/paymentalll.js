@@ -21,7 +21,7 @@ export default function PaymentHistoryPagesss() {
     const token= localStorage.getItem("token")
        
     try {
-      const res = await fetch('https://e-com-customizer.onrender.com/api/v1/payment/fetchAllPayments',{
+      const res = await fetch('https://ruwa-backend.onrender.com/api/v1/payment/fetchAllPayments',{
         method:"GEt",
        headers: {
             Authorization: `Bearer ${token}`,

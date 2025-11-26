@@ -39,7 +39,7 @@ export function UserInfo() {
 
       try {
         const res = await fetch(
-          `https://e-com-customizer.onrender.com/api/v1/getAdminById/${userId}`,
+          `https://ruwa-backend.onrender.com/api/v1/getAdminById/${userId}`,
           {
             headers: {
               Authorization: `Bearer ${token}`,

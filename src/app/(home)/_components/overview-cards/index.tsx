@@ -27,7 +27,7 @@ export function OverviewCardsGroup() {
         }
 
         const res = await fetch(
-          "https://e-com-customizer.onrender.com/api/v1/admin/dashboard",
+          "https://ruwa-backend.onrender.com/api/v1/admin/dashboard",
           {
             headers: {
               Authorization: `Bearer ${token}`,

@@ -53,7 +53,7 @@ const Login = () => {
   }
 
   try {
-    const res = await fetch("https://e-com-customizer.onrender.com/api/v1/adminLogin", {
+    const res = await fetch("https://ruwa-backend.onrender.com/api/v1/adminLogin", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

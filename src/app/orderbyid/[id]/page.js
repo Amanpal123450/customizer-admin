@@ -14,7 +14,7 @@ export default function OrderDetailPage() {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await fetch(`https://e-com-customizer.onrender.com/api/v1/orders/${id}`, {
+        const res = await fetch(`https://ruwa-backend.onrender.com/api/v1/orders/${id}`, {
           headers: {
             Authorization: `Bearer ${token}`,
           },

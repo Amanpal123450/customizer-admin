@@ -70,7 +70,7 @@ export default function UnitsPage() {
   useEffect(() => {
     async function GetAllvariation() {
       const res = await fetch(
-        "https://e-com-customizer.onrender.com/api/v1/totalUnit",
+        "https://ruwa-backend.onrender.com/api/v1/totalUnit",
         {
           method: "GET",
           headers: {
@@ -94,7 +94,7 @@ export default function UnitsPage() {
     // setLoading(true);
     try {
       const res = await fetch(
-        "https://e-com-customizer.onrender.com/api/v1/addUnit",
+        "https://ruwa-backend.onrender.com/api/v1/addUnit",
         {
           method: "POST",
           headers: {
@@ -121,7 +121,7 @@ export default function UnitsPage() {
     console.log("sdcs");
     try {
       const res = await fetch(
-        `https://e-com-customizer.onrender.com/api/v1/unit/${editId}`,
+        `https://ruwa-backend.onrender.com/api/v1/unit/${editId}`,
         {
           method: "PUT",
           headers: {
@@ -205,7 +205,7 @@ export default function UnitsPage() {
   const handleDelete = async (id) => {
   if (confirm("Are you sure you want to delete this unit?")) {
     try {
-      const res = await fetch(`https://e-com-customizer.onrender.com/api/v1/unit/${id}`, {
+      const res = await fetch(`https://ruwa-backend.onrender.com/api/v1/unit/${id}`, {
         method: "DELETE",
       });
  const data = await res.json();
@@ -228,7 +228,7 @@ export default function UnitsPage() {
 
 const toggleStatus = async (id) => {
   try {
-    const response = await fetch(`https://e-com-customizer.onrender.com/api/v1/unitToggle/${id}`,{
+    const response = await fetch(`https://ruwa-backend.onrender.com/api/v1/unitToggle/${id}`,{
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

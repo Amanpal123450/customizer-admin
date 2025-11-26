@@ -146,7 +146,7 @@ export default function EditProductPage() {
   // useEffect(() => {
   //   const fetchProduct = async () => {
   //     try {
-  //       const res = await fetch(`https://e-com-customizer.onrender.com/api/v1/getProduct/${id}`);
+  //       const res = await fetch(`https://ruwa-backend.onrender.com/api/v1/getProduct/${id}`);
   //       const data = await res.json();
   //       if (!res.ok) throw new Error(data.message || "Failed to fetch product");
   //       setForm({

@@ -70,7 +70,7 @@ const OrderManagementPage = () => {
     try {
       setLoading(true);
       const response = await fetch(
-        " https://e-com-customizer.onrender.com/api/v1/orders/all-orders",
+        " https://ruwa-backend.onrender.com/api/v1/orders/all-orders",
       );
       const data = await response.json();
       console.log(data);
@@ -223,7 +223,7 @@ const OrderManagementPage = () => {
   //     const token =localStorage.getItem("token");
   //       try {
   //         const res = await fetch(
-  //           ` https://e-com-customizer.onrender.com/api/v1/orders/all-orders`,{
+  //           ` https://ruwa-backend.onrender.com/api/v1/orders/all-orders`,{
 
   //              method: "GET",
   //         headers: {
@@ -283,7 +283,7 @@ const OrderManagementPage = () => {
 
       const token = localStorage.getItem("token");
 
-      const res = await fetch(`https://e-com-customizer.onrender.com/api/v1/ordersStatus/${orderId}`, {
+      const res = await fetch(`https://ruwa-backend.onrender.com/api/v1/ordersStatus/${orderId}`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",
@@ -433,7 +433,7 @@ const OrderManagementPage = () => {
     const fetchOrder = async () => {
       try {
         const res = await fetch(
-          `https://e-com-customizer.onrender.com/api/v1/orders/${selectedOrder}`
+          `https://ruwa-backend.onrender.com/api/v1/orders/${selectedOrder}`
         );
         if (!res.ok) {
           throw new Error(`HTTP error! status: ${res.status}`);

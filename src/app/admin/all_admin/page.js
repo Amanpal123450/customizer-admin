@@ -26,7 +26,7 @@ export default function AdminPage() {
       try {
         const token = localStorage.getItem("token");
 
-        const res = await fetch("https://e-com-customizer.onrender.com/api/v1/getAllUsers", {
+        const res = await fetch("https://ruwa-backend.onrender.com/api/v1/getAllUsers", {
           headers: {
             Authorization: `Bearer ${token}`,
           },
@@ -53,7 +53,7 @@ export default function AdminPage() {
     try {
       const token = localStorage.getItem("token");
 
-      const res = await fetch(` https://e-com-customizer.onrender.com/api/v1/deleteUser/${id}`, {
+      const res = await fetch(` https://ruwa-backend.onrender.com/api/v1/deleteUser/${id}`, {
         method: "DELETE",
         headers: {
           Authorization: `Bearer ${token}`,
